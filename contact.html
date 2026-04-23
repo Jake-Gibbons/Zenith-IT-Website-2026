@@ -25,8 +25,8 @@
   <main>
     <section class="container page-hero">
       <h1>Contact Zenith IT</h1>
-      <p class="lead">Tell us about your IT or website goals and we'll recommend the right next step.</p>
-      <div class="glass-card" style="padding:1.4rem; margin-top:1rem; max-width:700px;">
+      <p class="lead">Tell us about your IT or website goals and we will recommend practical next steps tailored to your business priorities, timelines and budget.</p>
+      <div class="glass-card contact-info">
         <ul class="contact-list">
           <li><strong>Email:</strong> hello@zenithit.example</li>
           <li><strong>Phone:</strong> +44 (0)0000 000000</li>
@@ -35,8 +35,85 @@
         </ul>
       </div>
     </section>
+    <section class="container section">
+      <article class="glass-card contact-form-card" id="contact-form">
+        <h2>Send us a message</h2>
+        <p class="lead copy-small">Complete the form below and a member of our team will respond within one business day.</p>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-grid">
+            <label>
+              Full name
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" autocomplete="organization" />
+            </label>
+          </div>
+          <div class="form-grid">
+            <label>
+              Email address
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone" autocomplete="tel" />
+            </label>
+          </div>
+          <label>
+            Service needed
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option value="managed-it">Managed IT Services</option>
+              <option value="web-design">Website Design & Development</option>
+              <option value="both">Both services</option>
+              <option value="other">Other / not sure</option>
+            </select>
+          </label>
+          <label>
+            How can we help?
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit enquiry</button>
+        </form>
+      </article>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container">Replace contact placeholders with your live details.</div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <a class="footer-brand" href="/index.html">Zenith IT</a>
+        <p class="lead copy-small">Managed IT services and website design & development for small and medium-sized businesses across the UK.</p>
+      </section>
+      <section>
+        <h2 class="footer-heading">Services</h2>
+        <ul class="footer-links">
+          <li><a href="/managed-it-services.html">Managed IT Services</a></li>
+          <li><a href="/website-design-development.html">Website Design & Development</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="footer-heading">Company</h2>
+        <ul class="footer-links">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/index.html">Home</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="footer-heading">Get in touch</h2>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@zenithit.example">hello@zenithit.example</a></li>
+          <li><a href="tel:+440000000000">+44 (0)0000 000000</a></li>
+          <li>Mon–Fri, 8:30–18:00</li>
+        </ul>
+        <a class="btn btn-secondary footer-cta" href="#contact-form">Send us a message</a>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Zenith IT. All rights reserved.</p>
+    </div>
+  </footer>
   <script src="/script.js"></script>
 </body>
 </html>
