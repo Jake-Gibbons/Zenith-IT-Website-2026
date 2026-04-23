@@ -12,11 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy via SSH
-        uses: easedy/ssh-deploy@main
+      - name: Deploy via SSH 
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.SERVER_IP }}
           REMOTE_USER: ${{ secrets.SERVER_USER }}
-          TARGET: /htdocs/  # Update this to your site path
-          SOURCE: "/"  # This copies everything in the repo
+          TARGET: /htdocs/
+          SOURCE: "/"
