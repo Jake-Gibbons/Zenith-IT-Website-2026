@@ -114,6 +114,10 @@ h1 {
   max-width: 60ch;
 }
 
+.copy-small {
+  font-size: 1rem;
+}
+
 .glass-card {
   background: var(--glass);
   border: 1px solid var(--glass-border);
