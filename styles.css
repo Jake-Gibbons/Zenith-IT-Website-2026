@@ -60,17 +60,15 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-logo img {
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  height: auto;
 }
 
 .logo-full {
   display: block;
-  opacity: 1;
 }
 
 .logo-square {
   display: none;
-  opacity: 0;
 }
 
 .site-header.is-minimized .logo-full {
@@ -79,7 +77,6 @@ img { max-width: 100%; display: block; }
 
 .site-header.is-minimized .logo-square {
   display: block;
-  opacity: 1;
 }
 
 .nav-links {
