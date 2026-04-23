@@ -20,6 +20,19 @@ if (siteHeader) {
     siteHeader.classList.toggle('is-minimized', window.scrollY > HEADER_MINIMIZE_SCROLL_THRESHOLD_PX);
   };
 
+  let isTicking = false;
+  const onScroll = () => {
+    if (isTicking) {
+      return;
+    }
+
+    isTicking = true;
+    window.requestAnimationFrame(() => {
+      toggleHeaderState();
+      isTicking = false;
+    });
+  };
+
   toggleHeaderState();
-  window.addEventListener('scroll', toggleHeaderState, { passive: true });
+  window.addEventListener('scroll', onScroll, { passive: true });
 }
