@@ -90,6 +90,13 @@ img { max-width: 100%; display: block; }
   backdrop-filter: blur(8px);
 }
 
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
 main { padding: 2rem 0 4rem; }
 
 .hero {
@@ -129,6 +136,10 @@ h1 {
 .hero-panel {
   padding: 1.5rem;
   animation: floatIn 1s ease both;
+}
+
+.hero-panel-title {
+  margin-bottom: 0.5rem;
 }
 
 .metrics {
@@ -183,10 +194,97 @@ h1 {
   gap: 0.7rem;
 }
 
+.contact-info {
+  padding: 1.4rem;
+  margin-top: 1rem;
+  max-width: 700px;
+}
+
+.contact-form-card,
+.about-card {
+  padding: 1.4rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--glass-border);
+  border-radius: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  background: rgba(7, 24, 37, 0.65);
+  color: var(--text);
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
 .site-footer {
   border-top: 1px solid rgba(87, 184, 236, 0.25);
-  padding: 1.4rem 0;
+  padding: 2rem 0 1.3rem;
   color: var(--muted);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.footer-brand {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.footer-heading {
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-cta {
+  margin-top: 0.8rem;
+}
+
+.footer-bottom {
+  margin-top: 1.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(87, 184, 236, 0.2);
+}
+
+.footer-bottom p {
+  margin: 0;
 }
 
 @keyframes floatIn {
@@ -198,9 +296,12 @@ h1 {
   .hero { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
   .metrics { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
   .nav-wrap { flex-direction: column; gap: 0.7rem; }
   .nav-links { flex-wrap: wrap; justify-content: center; }
+  .footer-grid { grid-template-columns: 1fr; }
 }
