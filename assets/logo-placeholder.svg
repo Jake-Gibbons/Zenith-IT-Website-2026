@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64" role="img" aria-labelledby="title desc">
+  <title id="title">Zenith IT Logo Placeholder</title>
+  <desc id="desc">Temporary logo placeholder for Zenith IT website.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4f9cff" />
+      <stop offset="100%" stop-color="#7afcff" />
+    </linearGradient>
+  </defs>
+  <rect width="240" height="64" rx="14" fill="#0f172a" />
+  <rect x="3" y="3" width="234" height="58" rx="11" fill="none" stroke="url(#grad)" stroke-width="2" />
+  <text x="20" y="41" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">ZENITH IT</text>
+</svg>
