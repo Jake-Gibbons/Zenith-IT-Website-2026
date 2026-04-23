@@ -205,6 +205,10 @@ h1 {
   padding: 1.4rem;
 }
 
+.contact-form-card {
+  max-width: 860px;
+}
+
 .contact-form {
   display: grid;
   gap: 1rem;
