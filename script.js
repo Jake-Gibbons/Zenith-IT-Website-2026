@@ -11,3 +11,14 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll('.service-card').forEach((card) => observer.observe(card));
+
+const siteHeader = document.querySelector('.site-header');
+
+if (siteHeader) {
+  const toggleHeaderState = () => {
+    siteHeader.classList.toggle('is-minimized', window.scrollY > 24);
+  };
+
+  toggleHeaderState();
+  window.addEventListener('scroll', toggleHeaderState, { passive: true });
+}
