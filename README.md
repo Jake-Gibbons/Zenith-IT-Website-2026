@@ -5,6 +5,7 @@ Static multi-page website for Zenith IT with placeholder branding assets.
 ## Pages
 - Home (`/index.html`)
 - Managed IT Services (`/managed-it-services.html`)
+- Services (`/services.html`)
 - Website Design & Development (`/website-design-development.html`)
 - About (`/about.html`)
 - Contact (`/contact.html`)
