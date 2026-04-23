@@ -1,12 +1,12 @@
 :root {
-  --bg: #050816;
-  --bg-secondary: #0b1022;
-  --text: #e2e8f0;
-  --muted: #94a3b8;
-  --accent: #4f9cff;
-  --accent-2: #7afcff;
-  --glass: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.18);
+  --bg: #071825;
+  --bg-secondary: #103249;
+  --text: #eaf6ff;
+  --muted: #b0cfe2;
+  --accent: #1d8ed5;
+  --accent-2: #57b8ec;
+  --glass: rgba(255, 255, 255, 0.09);
+  --glass-border: rgba(103, 185, 234, 0.34);
   --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
 }
 
@@ -18,9 +18,9 @@ body {
   margin: 0;
   font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 20% 20%, #13214a, transparent 30%),
-    radial-gradient(circle at 75% 0%, #0b3562, transparent 35%),
-    linear-gradient(170deg, var(--bg), #020617 65%);
+  background: radial-gradient(circle at 18% 18%, #1d8ed5, transparent 34%),
+    radial-gradient(circle at 78% 0%, #1b3d54, transparent 36%),
+    linear-gradient(170deg, var(--bg), #05111d 68%);
   min-height: 100vh;
 }
 
@@ -33,8 +33,8 @@ img { max-width: 100%; display: block; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(14px);
-  background: rgba(5, 8, 22, 0.65);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(7, 24, 37, 0.72);
+  border-bottom: 1px solid rgba(87, 184, 236, 0.25);
 }
 
 .container {
@@ -141,7 +141,7 @@ h1 {
 .metric {
   padding: 0.9rem;
   border-radius: 0.8rem;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(16, 50, 73, 0.45);
 }
 
 .metric strong {
@@ -184,7 +184,7 @@ h1 {
 }
 
 .site-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(87, 184, 236, 0.25);
   padding: 1.4rem 0;
   color: var(--muted);
 }
