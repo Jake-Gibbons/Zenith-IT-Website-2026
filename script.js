@@ -12,11 +12,12 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll('.service-card').forEach((card) => observer.observe(card));
 
+const HEADER_MINIMIZE_SCROLL_THRESHOLD = 24;
 const siteHeader = document.querySelector('.site-header');
 
 if (siteHeader) {
   const toggleHeaderState = () => {
-    siteHeader.classList.toggle('is-minimized', window.scrollY > 24);
+    siteHeader.classList.toggle('is-minimized', window.scrollY > HEADER_MINIMIZE_SCROLL_THRESHOLD);
   };
 
   toggleHeaderState();
