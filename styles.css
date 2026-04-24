@@ -47,6 +47,36 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: space-between;
   padding: 0.9rem 0;
+  transition: padding 0.25s ease;
+}
+
+.site-header.is-minimized .nav-wrap {
+  padding: 0.55rem 0;
+}
+
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: auto;
+}
+
+.logo-full {
+  display: block;
+}
+
+.logo-square {
+  display: none;
+}
+
+.site-header.is-minimized .logo-full {
+  display: none;
+}
+
+.site-header.is-minimized .logo-square {
+  display: block;
 }
 
 .nav-links {
@@ -307,5 +337,6 @@ h1 {
 @media (max-width: 640px) {
   .nav-wrap { flex-direction: column; gap: 0.7rem; }
   .nav-links { flex-wrap: wrap; justify-content: center; }
+  .site-header.is-minimized .nav-wrap { padding: 0.7rem 0; }
   .footer-grid { grid-template-columns: 1fr; }
 }
